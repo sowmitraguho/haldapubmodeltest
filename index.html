@@ -12,6 +12,7 @@
     <div id="app" class="w-full max-w-md mx-auto">
         <!-- Login Form -->
         <div id="login-section" class="bg-white p-8 shadow-md rounded">
+            
             <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Student Login</h1>
             <form id="login-form">
                 <div class="mb-4">
@@ -32,6 +33,16 @@
                 <!-- Exams will be loaded dynamically here -->
             </div>
         </div>
+
+        <!-- Result Section -->
+        <div id="result-list-section" class="hidden">
+            <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Result List</h1>
+            <!-- <img src="result01.png" alt=""> -->
+            <div id="result-list" >
+                
+                <!-- Exams will be loaded dynamically here -->
+            </div>
+        </div>
     </div>
 
     <script>
@@ -45,12 +56,24 @@
             { "examName": "B unit 50 marks model Test", "syllabus": "Previous Year Question 2019-20, 2020-21", "date": "27-28/12/2024", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSdIeA8oDnNKnuFly2dsveUX3Oncr5spWlAbW40dsiVH85YdLQ" }
             ]
         };
+        const resultData = {
+            "batch1": [
+                { "resultLink": "result11.jpg" }
+
+            ],
+            "batch2": [
+            { "resultLink": "result21.jpg" },
+            { "resultLink": "result22.jpg" }
+            ]
+        };
 
         const loginForm = document.getElementById("login-form");
         const studentIdInput = document.getElementById("student-id");
         const loginSection = document.getElementById("login-section");
         const examListSection = document.getElementById("exam-list-section");
         const examList = document.getElementById("exam-list");
+        const resultListSection = document.getElementById("result-list-section");
+        const resultList = document.getElementById("result-list");
 
         loginForm.addEventListener("submit", (event) => {
             event.preventDefault();
@@ -69,6 +92,7 @@
         function displayExams(batch) {
             loginSection.classList.add("hidden");
             examListSection.classList.remove("hidden");
+            resultListSection.classList.remove("hidden");
 
             const exams = fakeExamsData[batch];
             examList.innerHTML = exams.map(exam => `
@@ -81,6 +105,11 @@
                     <a href=${exam.examLink}>Enter Exam</a>
                 </div>
             `).join("");
+            const results = resultData[batch];
+            resultList.innerHTML = results.map(result => `
+            <img id="resultImage" src=${result.resultLink} alt="">
+            `
+            ).join("");
         }
     </script>
 </body>
