@@ -36,7 +36,7 @@
 
         <!-- Result Section -->
         <div id="result-list-section" class="hidden">
-            <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Result List</h1>
+            <h1 class="text-2xl font-bold text-gray-800 text-center my-4">Result List</h1>
             <!-- <img src="result01.png" alt=""> -->
             <div id="result-list" >
                 
@@ -107,7 +107,7 @@
             `).join("");
             const results = resultData[batch];
             resultList.innerHTML = results.map(result => `
-            <img id="resultImage" src=${result.resultLink} alt="">
+            <img class="my-4" src=${result.resultLink} alt="">
             `
             ).join("");
         }
