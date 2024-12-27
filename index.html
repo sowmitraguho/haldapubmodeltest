@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login and Exam List</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
     <div id="app" class="w-full max-w-md mx-auto">
         <!-- Login Form -->
@@ -14,12 +16,15 @@
             <form id="login-form">
                 <div class="mb-4">
                     <label for="student-id" class="block text-gray-600 font-medium">Student ID</label>
-                    <input type="text" id="student-id" class="w-full px-4 py-2 border rounded focus:ring focus:ring-blue-300" placeholder="Enter your 8-digit ID" required>
+                    <input type="text" id="student-id"
+                        class="w-full px-4 py-2 border rounded focus:ring focus:ring-blue-300"
+                        placeholder="Enter your 8-digit ID" required>
                 </div>
-                <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Login</button>
+                <button type="submit"
+                    class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Login</button>
             </form>
         </div>
-        
+
         <!-- Exam List Section -->
         <div id="exam-list-section" class="hidden">
             <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Exam List</h1>
@@ -33,16 +38,11 @@
         // Fake JSON data file for exams
         const fakeExamsData = {
             "batch1": [
-                { "examName": "English 05", "syllabus": "Wh & Embedded Question, Inversion of Verb, Tag Question, Vocabulary: From Given Sheet ", "date": "2024-12-25/26", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLScxn8DYixeAlZgFirglwcNfZnlMdawR_f175z5J8L2bBHQ_-A" },
-                { "examName": "Biology 03", "syllabus": "Botany Chap: 7-9, Zoology Chap: 7-9", "date": "26-27/12/2024", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSebxSuFexfrtDw9XbL9ZexBxlvQCeFm-w15946Pgd4IOGorbg" },
-                { "examName": "IQ Model Test 06", "syllabus": "Date,  Dissimilarity,  Synonyms, Analogy", "date": "26-27/12/2024", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSdfWt9XgnqV8JSbk6cAyv9__4omutmgE6E2BvwQBQJx5g7OWA" }
-                
+                { "examName": "B unit 50 marks model Test", "syllabus": "Previous Year Question 2019-20, 2020-21", "date": "27-28/12/2024", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSdIeA8oDnNKnuFly2dsveUX3Oncr5spWlAbW40dsiVH85YdLQ" }
+
             ],
             "batch2": [
-            { "examName": "English 01", "syllabus": "Finite and Non-finite Verb, Verbals, Conjugation of Verb, Right Form of Verb, Subject Verb Agreement, Correction. Group Verb: From Any Book ", "date": "2024-12-25/26", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSecpHZSCN0ifvXdGwMeYpawPnSbYGofVwefYu9j8u235LYE0w" },
-            { "examName": "Biology 01", "syllabus": "Botany Chap: 1-3, Zoology Chap: 1-3", "date": "26-27/12/2024", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSdWO7S0IUeyAhWXHpwNQ8p3Hq2sEZQp7GosnurVQy8ehHPpiw" },
-            { "examName": "Higher Math 01", "syllabus": "Math 1st Paper chapter 1-4", "date": "26-27/12/2024", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSeXCzGeF4N7_oEBMmJtTVKTXwrYRvzKIlITPDIofW_zVgz1VA" },
-            { "examName": "IQ Model Test 01", "syllabus": "Relation, Distance, Letter code, Analogy", "date": "26-27/12/2024", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSeXCzGeF4N7_oEBMmJtTVKTXwrYRvzKIlITPDIofW_zVgz1VA" }
+            { "examName": "B unit 50 marks model Test", "syllabus": "Previous Year Question 2019-20, 2020-21", "date": "27-28/12/2024", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSdIeA8oDnNKnuFly2dsveUX3Oncr5spWlAbW40dsiVH85YdLQ" }
             ]
         };
 
@@ -84,4 +84,5 @@
         }
     </script>
 </body>
+
 </html>
