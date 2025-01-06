@@ -12,7 +12,7 @@
     <div id="app" class="w-full max-w-md mx-auto">
         <!-- Login Form -->
         <div id="login-section" class="bg-white p-8 shadow-md rounded">
-            
+
             <h1 class="text-2xl font-bold text-gray-800 text-center mb-4">Student Login</h1>
             <form id="login-form">
                 <div class="mb-4">
@@ -38,8 +38,8 @@
         <div id="result-list-section" class="hidden">
             <h1 class="text-2xl font-bold text-gray-800 text-center my-4">Result List</h1>
             <!-- <img src="result01.png" alt=""> -->
-            <div id="result-list" >
-                
+            <div id="result-list">
+
                 <!-- Exams will be loaded dynamically here -->
             </div>
         </div>
@@ -49,15 +49,16 @@
         // Fake JSON data file for exams
         const fakeExamsData = {
             "batch1": [
-            
-            { "examName": "General Knowledge 07", "syllabus": "See in Routine", "date": "03-04/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSf6gO1WpSOmnXZpyRGIIfMMEkeP8bEU1Tyeo7D7zhKdmgy9Ag" },
-            { "examName": "Problem Solving", "syllabus": "See in Routine", "date": "05-06/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSeBlCxJMCYY4IynV5-WqeIj5MUOz6mUgDpTmtv1RQh-RPGvgA" },
-            { "examName": "Chemistry 04", "syllabus": "See in Routine", "date": "05-06/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSdnSHxvVASN9ekgQyeJrMtovXZ3k1gdWGk6PiBHso3k3lW6DA" }
+
+
+                { "examName": "Problem Solving", "syllabus": "See in Routine", "date": "05-06/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSeBlCxJMCYY4IynV5-WqeIj5MUOz6mUgDpTmtv1RQh-RPGvgA" },
+                { "examName": "Chemistry 04", "syllabus": "See in Routine", "date": "05-06/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSdnSHxvVASN9ekgQyeJrMtovXZ3k1gdWGk6PiBHso3k3lW6DA" }
             ],
             "batch2": [
-            { "examName": "Bangla 03", "syllabus": "See in Routine", "date": "04-05/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLScDFPlBcgYLZNmf4NYJvmTPhl48Y9-XiIOmuy-rJN1kJoRa_Q" },
-            { "examName": "Physics & Chemistry 03", "syllabus": "See in Routine", "date": "05-06/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLScie3_oWXLV7Jd4cAGlRI4rsYnYwEYVFl-g3BgOMkFacUSO3w" },
-            { "examName": "Problem Solving 03", "syllabus": "See in Routine", "date": "05-06/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSeBlCxJMCYY4IynV5-WqeIj5MUOz6mUgDpTmtv1RQh-RPGvgA" }
+
+                { "examName": "Physics & Chemistry 03", "syllabus": "See in Routine", "date": "05-06/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLScie3_oWXLV7Jd4cAGlRI4rsYnYwEYVFl-g3BgOMkFacUSO3w" },
+                { "examName": "Problem Solving 03", "syllabus": "See in Routine", "date": "05-06/01/2025", "time": "09:00 PM", "examLink": "https://timer.addonforge.com/timer/1FAIpQLSeBlCxJMCYY4IynV5-WqeIj5MUOz6mUgDpTmtv1RQh-RPGvgA" },
+                { "examName": "GK 04", "syllabus": "See in Routine", "date": "06-07/01/2025", "time": "09:00 PM", "examLink": "" }
             ]
         };
         const resultData = {
@@ -67,12 +68,12 @@
 
             ],
             "batch2": [
-            { "resultLink": "Result21.png" },
-            { "resultLink": "ResultBiology02.png" },
-            { "resultLink": "ResultHMath02.png" },
-            { "resultLink": "ResultEnglish02.png" },
-            { "resultLink": "ResultBangla03.png" }
-            
+                { "resultLink": "Result21.png" },
+                { "resultLink": "ResultBiology02.png" },
+                { "resultLink": "ResultHMath02.png" },
+                { "resultLink": "ResultEnglish02.png" },
+                { "resultLink": "ResultBangla03.png" }
+
             ]
         };
 
